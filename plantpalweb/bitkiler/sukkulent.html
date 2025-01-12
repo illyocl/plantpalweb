@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukkulent - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Sukkulent</span>
+            </h1>
+            <p>
+                <img src="https://static.ticimax.cloud/36217/uploads/urunresimleri/buyuk/sukulent--49cd-.jpeg" alt="Sukkulent">
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Succulent</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">İç Mekan Bitkisi</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Güneş ışığına çok ihtiyaç duyar, ancak doğrudan güneş ışığından korunmalıdır.</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Az su ihtiyacı vardır, toprağın kurumasını bekleyin.</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Sukkulent Hakkında</h3>
+                <p>Sukkulentler, suyu yapraklarında ve gövdelerinde depolayan bitkilerdir. Genellikle kuru ve sıcak ortamlarda yetişirler. İç mekanlarda bakımı kolaydır.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Sukkulentler, çok az bakım gerektiren bitkilerdir. İyi drene edilen toprakta ve güneşli bir ortamda büyürler.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>İlkbahar veya yaz aylarında çoğaltılabilirler.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Sukkulentler, çeliklerle veya yapraklardan çoğaltılabilir. Çelikleri doğrudan toprağa yerleştirerek köklenmesini sağlayabilirsiniz.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Sukkulentler, aşırı sulamaya duyarlı değildir. Toprağı tamamen kuruduktan sonra sulama yapılmalıdır.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Formlama</div>
+                <p>Sukkulentler doğal olarak kompakt büyürler, ancak bazen büyümeleri kontrol altında tutulmalıdır. Gerektiğinde kesim yapılarak şekil verilebilir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <p>Sukkulentler genellikle çeliklerle çoğaltılır, dolayısıyla hasat için herhangi bir meyve veya çiçek beklenmez.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Sukkulentler çoğu hastalığa karşı dayanıklıdır, ancak aşağıdaki zararlılara karşı dikkat edilmelidir:</p>
+                <table>
+                    <caption>
+                        <h4>Sukkulent Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Kök Çürüğü</th>
+                            <td>Hastalık</td>
+                            <td>Yapraklarda sararma, köklerde çürüme</td>
+                            <td>Toprağın aşırı nemli kalmamasına özen gösterin ve sağlıklı toprak kullanın.</td>
+                        </tr>
+                        <tr>
+                            <th>Yaprak Bitleri</th>
+                            <td>Zararlı</td>
+                            <td>Yapraklarda küçük zararlıların bulunması, yaprakların sararması</td>
+                            <td>Doğal böcek ilaçları kullanarak zararlılarla mücadele edin.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

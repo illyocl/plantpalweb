@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yucca - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Yucca</span>
+            </h1>
+            <p>
+                <img src="https://cdn.myikas.com/images/1bd9ce94-24d0-4dd9-a116-9f46a272aad2/6b60bd20-480d-4a0d-86a0-8eb9069ed75d/image_3840.webp" alt="Yucca">
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Yucca spp.</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">Yüksek İç Mekan Bitkisi</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Parlak, dolaylı ışık</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Toprağın kurumasına izin verin, fazla suyu sevmez.</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Yucca Hakkında</h3>
+                <p>Yucca, özellikle iç mekanlarda yetişen ve dekoratif görünümleriyle popüler olan bir bitkidir. Sert yaprakları ve uzun gövdesiyle dikkat çeker. Kolay bakımı ve dayanıklılığı ile bilinir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Yucca bitkisi sıcak iklimleri sever. Doğrudan güneş ışığı almasa da, aydınlık bir ortamda sağlıklı bir şekilde büyür.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>Yucca, ilkbahar ve yaz aylarında daha hızlı büyür, bu dönemde ekim yapılabilir.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Toprağı gevşetin ve bitkinin kök kısmını dikine yerleştirin.</li>
+                    <li>Yucca, kuraklığa dayanıklıdır ancak toprak kurudukça sulama yapılmalıdır.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Yucca bitkisi, fazla suyu sevmez. Toprağın üst kısmının kurumasını bekleyin ve o zaman sulayın.</li>
+                    <li>Kök çürümelerini önlemek için iyi bir drenaj sağlanmalıdır.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Formlama</div>
+                <p>Yucca bitkisi doğal olarak dik ve yüksek büyür. Genellikle şekillendirilmesi gerekmez ancak bitkiyi daha kompakt tutmak için üst kısmını kesebilirsiniz.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <p>Yucca bitkisi çiçeklenme gösterse de genellikle iç mekanlarda bu durum nadirdir. Çiçekler açarsa, solmuş çiçekler düzenli olarak temizlenmelidir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Yucca, zararlılara karşı oldukça dayanıklıdır. Ancak bazı zararlılar, örneğin yaprak bitleri, yucca bitkisini etkileyebilir. İşte en yaygın hastalıklar ve zararlılar:</p>
+                <table>
+                    <caption>
+                        <h4>Yucca Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Yaprak Bitleri</th>
+                            <td>Zararlı</td>
+                            <td>Yapraklarda sararma ve deforme olmuş bölgeler</td>
+                            <td>Bitkiden uzaklaştırarak temizleyin, zararlıları böcek ilacıyla öldürebilirsiniz.</td>
+                        </tr>
+                        <tr>
+                            <th>Kök Çürüğü</th>
+                            <td>Hastalık</td>
+                            <td>Yavaş büyüme, sararan yapraklar</td>
+                            <td>Fazla sulamayı önleyin, toprağın iyi drene olduğundan emin olun.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

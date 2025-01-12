@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lahana - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Lahana</span>
+            </h1>
+            <p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWSOTycDgLLmIGYwAqqk6LZv2Tkn7OzWBW4w&s" alt="Lahana" />
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Brassica oleracea</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">Sebze</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Dolaylı güneş ışığı</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Toprak nemli kalacak şekilde haftada 2 kez</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Lahana Hakkında</h3>
+                <p>Lahana, serin iklimlerde yetişen besleyici bir sebzedir. Salatalar, dolmalar ve çeşitli yemeklerde kullanılır. Lif, vitamin K ve C bakımından zengindir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Lahana, serin iklimlerde yetiştirilmesi gereken bir sebzedir. Humus bakımından zengin, iyi drene edilmiş toprak gerektirir.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>İlkbahar ya da sonbahar aylarında ekim yapın.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Tohumları 1-2 cm derinliğe ekin ve filizlenene kadar düzenli sulayın.</li>
+                    <li>Bitkiler arası 30-40 cm mesafe bırakın.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Toprağı sürekli nemli tutmaya özen gösterin, ancak aşırı sulamadan kaçının.</li>
+                    <li>Kök çürümesini önlemek için iyi drene edilmiş bir toprak tercih edin.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <ul>
+                    <li>Lahana, baş kısmı tam olarak olgunlaştığında hasat edilebilir.</li>
+                    <li>Kök kısmına yakın bir noktadan kesin.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Lahana, bazı zararlılar ve hastalıklara karşı hassastır. Yaygın problemler şunlardır:</p>
+                <table>
+                    <caption>
+                        <h4>Lahana Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Lahana Kelebeği</th>
+                            <td>Zararlı</td>
+                            <td>Yapraklarda delikler</td>
+                            <td>Böcek ilacı kullanımı veya manuel toplama.</td>
+                        </tr>
+                        <tr>
+                            <th>Kök Çürüklüğü</th>
+                            <td>Hastalık</td>
+                            <td>Köklerde yumuşama ve kötü koku</td>
+                            <td>İyi drene edilmiş toprak ve doğru sulama teknikleri.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

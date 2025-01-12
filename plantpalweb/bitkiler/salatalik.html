@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salatalık - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Salatalık</span>
+            </h1>
+            <p>
+                <img src="https://d2941uvtj8higz.cloudfront.net/uploads/2021/8/y47nk32HqhSpW2nTuklcJyyHDfo4F4i3Eqgcrmg1.jpg" alt="Salatalık">
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Cucumis sativus</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">Sebze</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Doğrudan güneş ışığı</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Haftada 2-3 kez sulama</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Salatalık Hakkında</h3>
+                <p>Salatalık, genellikle serin iklimlerde yetişen ve salatalarda yaygın olarak kullanılan, su içeriği yüksek bir sebzedir. Aynı zamanda düşük kalorili ve sağlıklı bir atıştırmalıktır.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Salatalık, sıcak ve güneşli alanları sever. Toprağın hafif nemli olması gerekir ve toprağın iyi drene olması önemlidir.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>İlkbahar aylarında tohumları ekmeye başlayın.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Toprağı iyice hazırlayın ve tohumları 1-2 cm derinliğe ekin.</li>
+                    <li>Bitkiler arasına yeterli mesafe bırakın, çünkü salatalıklar genişleyerek büyür.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Salatalıklar düzenli sulamayı sever, ancak su birikmesini engellemek gerekir.</li>
+                    <li>Toprağın üst kısmı kuruduğunda sulama yapın.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <ul>
+                    <li>Salatalıklar, yeşil ve olgunlaştığında hasat edilir.</li>
+                    <li>Hasat sırasında dikkatli olun, meyveyi nazikçe koparın.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Salatalıklar, çeşitli zararlılara karşı hassas olabilir. En yaygın hastalıklar şunlardır:</p>
+                <table>
+                    <caption>
+                        <h4>Salatalık Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Salatalık Mildiği</th>
+                            <td>Hastalık</td>
+                            <td>Yapraklarda beyaz toz, yaprak dökülmesi</td>
+                            <td>Hastalanmış yaprakları kesin ve hava sirkülasyonunu artırın.</td>
+                        </tr>
+                        <tr>
+                            <th>Salatalık Böceği</th>
+                            <td>Zararlı</td>
+                            <td>Yapraklarda sararma ve delikler</td>
+                            <td>İlgili böcek ilaçları kullanın ve doğal yöntemlerle kontrol edin.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

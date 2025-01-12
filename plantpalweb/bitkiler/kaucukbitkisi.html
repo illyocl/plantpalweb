@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kauçuk Bitkisi - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Kauçuk Bitkisi</span>
+            </h1>
+            <p>
+                <img src="https://ideacdn.net/idea/kr/53/myassets/products/279/1-1.jpg?revision=1715892493" alt="Kauçuk Bitkisi">
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Ficus elastica</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">Ağaç (İç Mekan)</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Orta ışık gereksinimi, doğrudan güneş ışığından kaçının.</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Toprağı kurudukça sulayın, fazla su vermekten kaçının.</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Kauçuk Bitkisi Hakkında</h3>
+                <p>Kauçuk bitkisi, büyük yaprakları ve hızlı büyümesi ile bilinen bir iç mekan bitkisidir. Sık sık dekoratif amaçlı tercih edilir, çünkü uzun ömürlüdür ve minimal bakım gerektirir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Kauçuk bitkisi, doğru ışık ve su koşullarında hızlıca büyüyebilir. Onun için uygun ortamda yetiştirilmesi önemlidir. Toprağının fazla nemli olmaması gerekir.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>Kauçuk bitkisi genellikle ilkbahar ve yaz aylarında ekilebilir.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Kauçuk bitkisi toprak üstü çeliklerle çoğaltılabilir.</li>
+                    <li>Yetiştirme için iyi drene edilmiş toprak kullanın.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Toprak nemini kontrol ederek sulayın, fazla su bitkinin köklerinin çürümesine neden olabilir.</li>
+                    <li>Bitkinin üst kısmı kurudukça sulama yapın.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Formlama</div>
+                <p>Kauçuk bitkisi düzgün büyümesi için düzenli olarak budanabilir. Bitkinin sağlıklı kalması için şekil vermek önemlidir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <p>Kauçuk bitkisinin yaprakları, zamanla büyüyüp daha büyük hale gelir. Eğer bitkiyi çoğaltmak isterseniz, uygun kesim yöntemleriyle çoğaltabilirsiniz.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Kauçuk bitkisi, genellikle zararlılara karşı dayanıklıdır ancak yine de dikkat edilmesi gereken bazı hastalıklar ve zararlılar olabilir:</p>
+                <table>
+                    <caption>
+                        <h4>Kauçuk Bitkisi Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Yaprak Bitleri</th>
+                            <td>Zararlı</td>
+                            <td>Yapraklarda sararma, küçük lekeler</td>
+                            <td>Doğal zararlı ilaçları kullanın ve bitkiyi düzenli kontrol edin.</td>
+                        </tr>
+                        <tr>
+                            <th>Kök Çürümesi</th>
+                            <td>Hastalık</td>
+                            <td>Bitkinin yaprakları sararır, kökler çürür.</td>
+                            <td>Fazla su verilmeli ve drenajın düzgün olduğundan emin olunmalıdır.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

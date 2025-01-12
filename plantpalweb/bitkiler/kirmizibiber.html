@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kırmızı Biber - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Kırmızı Biber</span>
+            </h1>
+            <p>
+                <img src="https://www.intfarming.com/blog/wp-content/uploads/2020/08/biber-fidesi.jpg" alt="Kırmızı Biber" />
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Capsicum annuum</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">Sebze</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Doğrudan güneş ışığı</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Hafif nemli toprak; haftada 2-3 kez sulama</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Kırmızı Biber Hakkında</h3>
+                <p>Kırmızı biber, tatlı veya acı çeşidiyle bilinen popüler bir sebzedir. C vitamini ve antioksidanlar bakımından zengindir, yemeklere lezzet katar.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Kırmızı biber, sıcak iklimlerde ve bol güneş alan bölgelerde en iyi şekilde yetişir. Toprağı organik madde açısından zengin ve iyi drene edilmiş olmalıdır.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>İlkbahar aylarında, don riski geçtiğinde tohum ekimi yapın.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Tohumları 1 cm derinliğe ekin ve filizlenene kadar düzenli sulayın.</li>
+                    <li>Filizler güçlendikçe aralarındaki mesafeyi 30-40 cm olacak şekilde düzenleyin.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Toprağı hafif nemli tutacak şekilde düzenli sulama yapın.</li>
+                    <li>Fazla su, kök çürümesine neden olabileceğinden dikkatli olun.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <ul>
+                    <li>Kırmızı biber, tam rengini aldığında ve olgunlaştığında hasat edilebilir.</li>
+                    <li>Keskin bir makasla biberleri bitkiyi zedelemeden kesin.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Kırmızı biber bazı zararlılara ve hastalıklara karşı hassastır. Yaygın problemler şunlardır:</p>
+                <table>
+                    <caption>
+                        <h4>Kırmızı Biber Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Biber Böceği</th>
+                            <td>Zararlı</td>
+                            <td>Yapraklarda delikler ve meyvelerde çürümeler</td>
+                            <td>Organik böcek ilaçları ve koruyucu ağlar kullanın.</td>
+                        </tr>
+                        <tr>
+                            <th>Fungal Lekelenme</th>
+                            <td>Hastalık</td>
+                            <td>Yapraklarda koyu kahverengi veya siyah lekeler</td>
+                            <td>Hastalıklı yaprakları temizleyin ve iyi havalandırma sağlayın.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

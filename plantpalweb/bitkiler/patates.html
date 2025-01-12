@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patates - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Patates</span>
+            </h1>
+            <p>
+                <img src="https://i.lezzet.com.tr/images-xxlarge-secondary/patates-yetistiriciligi-evde-patates-ne-zaman-ve-nasil-ekilir-6e0af123-e61a-4e40-980a-e263b79b52d8.jpg" alt="Patates">
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Solanum tuberosum</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">Sebze</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Doğrudan güneş ışığı</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Haftada 2-3 kez sulama</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Patates Hakkında</h3>
+                <p>Patates, dünya çapında yaygın olarak yetiştirilen ve çeşitli yemeklerde kullanılan çok yönlü bir sebzedir. Sağlık açısından yüksek besin değerine sahip olup, potasyum, vitamin C ve diyet lifi içerir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Patates, verimli, iyi drene olmuş ve hafif asidik topraklarda en iyi şekilde yetişir. Çoğunlukla serin iklimlerde daha verimli olur.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>İlkbahar başında tohumları ekmeye başlayın.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Patatesleri 10-15 cm derinliğe, 30 cm aralıklarla yerleştirin.</li>
+                    <li>Toprağı nemli tutmaya özen gösterin, ancak fazla su birikmesinden kaçının.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Patatesler düzenli sulama ister. Toprağın üst kısmı kuruduğunda sulama yapın.</li>
+                    <li>Fazla su birikmesi kök çürümelerine yol açabilir, bu yüzden drenaj önemlidir.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <ul>
+                    <li>Patatesler, bitki üst kısmı sararıp solduğunda hasat edilebilir.</li>
+                    <li>Hasat işlemi dikkatlice yapılmalıdır, patatesler zarar görmeden çıkarılmalıdır.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Patatesler çeşitli hastalıklar ve zararlılarla karşılaşabilir. En yaygın olanları:</p>
+                <table>
+                    <caption>
+                        <h4>Patates Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Patates Yumuşak Çürüklüğü</th>
+                            <td>Hastalık</td>
+                            <td>Patatesin yumuşaması ve kötü kokması</td>
+                            <td>Etkilenen patatesleri çıkarın, hastalık bulaşmayanları ayırın.</td>
+                        </tr>
+                        <tr>
+                            <th>Patates Böceği</th>
+                            <td>Zararlı</td>
+                            <td>Yapraklarda delikler, sararma</td>
+                            <td>Kimyasal veya organik böcek ilaçları kullanın.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

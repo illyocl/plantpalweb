@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Süsen - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Süsen</span>
+            </h1>
+            <p>
+                <img src="https://ideacdn.net/shop/ir/87/myassets/products/862/iris-fidesi-louisiana-black-gamecock-1.jpg?revision=1697143329" alt="Süsen">
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Iris germanica</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">Çiçekli Bitki</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Güneşli veya yarı gölgeli alanlar</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Toprağın kurumasına izin vermeden sulayın, fazla suyu sevmez.</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Süsen Hakkında</h3>
+                <p>Süsen, uzun ömürlü ve gösterişli çiçekleriyle bilinen bir bitkidir. Bahçelerde ve iç mekanlarda yetiştirilebilir. Çeşitli renklerde çiçekler açar ve estetik bir görünüm sunar.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Süsenler, doğrudan güneş ışığına ihtiyaç duyar ancak aşırı sıcaklardan korunmalıdır. Toprağın iyi drene olması önemlidir.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>İlkbahar veya sonbahar aylarında dikim yapılabilir.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Toprağı gevşetin ve soğanları yaklaşık 5-7 cm derinliğe ekin.</li>
+                    <li>Toprağı nemli tutun ancak aşırı sulamaktan kaçının.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Süsen bitkisini sularken, toprağın üst kısmının kurumasını bekleyin.</li>
+                    <li>Fazla su, kök çürümelerine yol açabilir, bu nedenle drenajı iyi sağlamak önemlidir.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Formlama</div>
+                <p>Süsenler doğal olarak şekilli büyür. Fakat, çiçekler solduğunda, yapraklar ve solmuş çiçekler temizlenmelidir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <p>Süsenler çiçeklenme döneminden sonra, solmuş çiçekleri temizlemek için hasat edilmelidir. Çiçekler genellikle ilkbahar ve yaz aylarında açar.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Süsen bitkisi, zararlılara karşı hassas olabilir. En yaygın hastalıklar ve zararlılar:</p>
+                <table>
+                    <caption>
+                        <h4>Süsen Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Yaprak Lekesi</th>
+                            <td>Hastalık</td>
+                            <td>Yapraklarda kahverengi lekeler, sararmalar</td>
+                            <td>Etkilenen yaprakları temizleyin ve toprak drenajını iyileştirin.</td>
+                        </tr>
+                        <tr>
+                            <th>Ökseotu</th>
+                            <td>Zararlı</td>
+                            <td>Bitkinin üzerine yapışan yapışkan maddeler</td>
+                            <td>Ökseotlarını temizleyin ve bitkiyi izole edin.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

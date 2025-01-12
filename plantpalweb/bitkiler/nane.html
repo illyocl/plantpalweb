@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nane - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Nane</span>
+            </h1>
+            <p>
+                <img src="https://i.nefisyemektarifleri.com/2023/06/22/nanenin-faydalari-neye-iyi-gelir-az-bilinen-mucizevi-etkileri.jpg" alt="Nane">
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Mentha</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">Ot</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Dolaylı güneş ışığı</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Toprak nemli kalacak şekilde düzenli sulama</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Nane Hakkında</h3>
+                <p>Nane, taze aroması ve sağlığa faydalarıyla bilinen çok yönlü bir bitkidir. Çaylardan salatalara kadar birçok tarifte kullanılabilir ve sindirime yardımcı olur.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Nane, nemli ve hafif gölgeli alanlarda iyi gelişir. Hızlı büyüyen ve yayılmaya meyilli bir bitkidir.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>İlkbaharın başında veya yaz başında ekim yapabilirsiniz.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Tohumları veya fide köklerini doğrudan toprağa yerleştirin.</li>
+                    <li>Bitkiler arasında 20-30 cm mesafe bırakın.</li>
+                    <li>Düzenli sulama yaparak toprağı nemli tutun.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Toprağı her zaman nemli tutun, ancak su birikmesine izin vermeyin.</li>
+                    <li>Nane, aşırı kuruluğa karşı hassastır.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <ul>
+                    <li>Nane yaprakları büyüdükten sonra istediğiniz zaman hasat edebilirsiniz.</li>
+                    <li>Daha yoğun büyüme için yaprakları düzenli olarak toplayın.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Nane, zararlılar ve hastalıklara karşı dikkat edilmesi gereken bir bitkidir:</p>
+                <table>
+                    <caption>
+                        <h4>Nane Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Yaprak Bitleri</th>
+                            <td>Zararlı</td>
+                            <td>Yapraklarda kıvrılma ve yapışkan kalıntılar</td>
+                            <td>Organik veya kimyasal böcek ilaçları kullanın.</td>
+                        </tr>
+                        <tr>
+                            <th>Külleme Hastalığı</th>
+                            <td>Hastalık</td>
+                            <td>Yapraklarda beyaz, toz benzeri bir tabaka</td>
+                            <td>İyi havalandırma sağlayın ve mantar ilaçları kullanın.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

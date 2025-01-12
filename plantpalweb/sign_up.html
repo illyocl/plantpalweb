@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Content/style.css">
+    <title>Kayıt Ol</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">PlantPal</div>
+        <nav class="navbar">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="login.html">Giriş Yap</a>
+            <a href="sign_up.html">Kayıt Ol</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Kayıt Ol</h2>
+        <form id="registerForm">
+            <input id="name" type="text" placeholder="İsim" required>
+            <input id="email" type="email" placeholder="Email" required>
+            <input id="password" type="password" placeholder="Şifre" required>
+            <input id="confirmPassword" type="password" placeholder="Şifreyi Tekrar Yaz" required>
+            <button type="submit">Kayıt Ol</button>
+        </form>
+        <div id="message" style="color: red; display: none;"></div>
+    </main>
+
+    <script src="/Scripts/api.js"></script>
+    <script>
+
+        document.getElementById("registerForm").addEventListener("submit", async function (e) {
+            e.preventDefault(); 
+
+            
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+
+            
+            if (password !== confirmPassword) {
+                displayMessage("Şifreler eşleşmiyor!", "red");
+                return;
+            }
+
+            // API'ye kayıt isteği 
+            try {
+                const result = await register(name, email, password);
+
+                if (result.message === "Kayıt başarılı") {
+                    displayMessage("Kayıt başarılı! Giriş sayfasına yönlendiriliyorsunuz...", "green");
+                    setTimeout(() => {
+                        window.location.href = "login.html"; 
+                    }, 2000);
+                } else {
+                    displayMessage(result.message || "Kayıt başarısız!", "red");
+                }
+            } catch (error) {
+                displayMessage("Bir hata oluştu: " + error.message, "red");
+            }
+        });
+
+        
+        function displayMessage(message, color) {
+            const messageDiv = document.getElementById("message");
+            messageDiv.style.display = "block";
+            messageDiv.style.color = color;
+            messageDiv.textContent = message;
+        }
+    </script>
+</body>
+</html>

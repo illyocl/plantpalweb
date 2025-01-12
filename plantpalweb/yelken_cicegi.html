@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/sailflower-icon.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css"> 
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yelken Çiçeği - PlantPal</title>
+    
+</head>
+<body>
+    <script>
+        fetch('header.html') 
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Yelken Çiçeği</span>
+            </h1>
+            <p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiGZEAMSvQmMCZg3PIxz9OZkySBgMHetbhYw&s" alt="Yelken Çiçeği">
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Hibiscus rosa-sinensis</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">Çiçekli bitki</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Doğrudan güneş ışığı</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Her hafta sulama</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Yelken Çiçeği Hakkında</h3>
+                <p>Yelken çiçeği, büyük ve gösterişli çiçekleri ile tanınan tropikal bir bitkidir. Genellikle yaz aylarında çiçek açar ve renkli çiçekleriyle bahçe ve iç mekanlarda popülerdir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Bakım İpuçları</div>
+                <ul>
+                    <li>Yelken çiçeğinizi doğrudan güneş ışığına maruz bırakın; bu, sağlıklı büyümesine yardımcı olur.</li>
+                    <li>Toprağının nemli kalmasına dikkat edin; suyun saksı altına akmasını sağlayın.</li>
+                    <li>Yüksek nem seviyeleri bu bitki için faydalıdır; yaprakları sık sık su püskürterek nemlendirin.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Çiçeklenme Süreci</div>
+                <p>Yelken çiçeği, genellikle yaz aylarında bol miktarda çiçek açar. Çiçekler, birkaç gün içinde açılır ve renkleri değişkenlik gösterebilir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Yelken çiçeği, çeşitli zararlılar ve hastalıklara karşı hassastır. Dikkat edilmesi gereken yaygın zararlılar:</p>
+                <table>
+                    <caption>
+                    <h4>Yelken Çiçeği Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Yaprak Bitleri</th>
+                            <td>İnsansız</td>
+                            <td>Yaprakların deforme olması; bitkinin zayıflaması</td>
+                            <td>Organik böcek ilaçları ile müdahale edin.</td>
+                        </tr>
+                        <tr>
+                            <th>Pas Hastalığı</th>
+                            <td>Hastalık</td>
+                            <td>Yapraklarda sarı lekeler; yaprakların dökülmesi</td>
+                            <td>Etkin bir fungisit ile tedavi edin.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

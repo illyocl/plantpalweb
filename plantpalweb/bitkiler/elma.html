@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elma - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Elma</span>
+            </h1>
+            <p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkhWgENIWRyiqW1g_9EIT-eJr3nFWpmKQeMA&s" alt="Elma" >
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Malus domestica</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">Meyve</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Tam güneş ışığı</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Haftada bir düzenli sulama</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Elma Hakkında</h3>
+                <p>Elma, tatlı ve sulu meyvesiyle dünya genelinde popüler bir meyvedir. Vitamin C, lif ve antioksidanlar açısından zengindir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Elma, serin iklimlerde yetişen dayanıklı bir meyve türüdür. Toprak iyi drene edilmiş olmalı ve organik madde bakımından zengin olmalıdır.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>Sonbaharda veya ilkbaharda fidan dikin.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Elma fidanlarını 3-4 metre aralıklarla dikin.</li>
+                    <li>Toprak hazırlığına dikkat ederek kompost veya gübre ekleyin.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Elma ağacı gençken düzenli sulanmalıdır.</li>
+                    <li>Büyüme sezonunda toprağın hafif nemli kalmasına dikkat edin.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <ul>
+                    <li>Elmalar, rengi olgunlaştığında ve kolayca dalından ayrıldığında toplanabilir.</li>
+                    <li>Hasat genellikle sonbaharda yapılır.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Elma ağaçları bazı zararlılara ve hastalıklara karşı hassastır. En yaygın olanları:</p>
+                <table>
+                    <caption>
+                        <h4>Elma Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Elma Karalekesi</th>
+                            <td>Hastalık</td>
+                            <td>Yapraklarda ve meyvelerde siyah lekeler</td>
+                            <td>Düzenli budama ve koruyucu ilaçlar kullanın.</td>
+                        </tr>
+                        <tr>
+                            <th>Kırmızı Örümcek</th>
+                            <td>Zararlı</td>
+                            <td>Yapraklarda sararma ve dökülme</td>
+                            <td>Organik böcek ilaçları veya su püskürtme yöntemi kullanın.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

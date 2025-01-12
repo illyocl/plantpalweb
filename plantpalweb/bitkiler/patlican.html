@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patlıcan - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Patlıcan</span>
+            </h1>
+            <p>
+                <img src="https://www.agrowy.com/_next/image?url=https%3A%2F%2Fapi.agrowy.com%2Fassets%2F104a4be2-9a71-4d7e-90e0-851601985891&w=3840&q=75" alt="Patlıcan">
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Solanum melongena</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">Sebze</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Doğrudan güneş ışığı</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Haftada 2-3 kez sulama</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Patlıcan Hakkında</h3>
+                <p>Patlıcan, Asya kökenli olup, Türk mutfağında çok yaygın olarak kullanılan lezzetli bir sebzedir. Besin değeri yüksek olup, düşük kalorili ve lif açısından zengindir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Patlıcan, sıcak iklimleri tercih eder ve doğrudan güneş ışığı alabileceği, verimli ve iyi drene olmuş topraklarda en iyi şekilde yetişir.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>İlkbahar başında tohumları ekmeye başlayın.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Toprağı iyice hazırlayın ve tohumları 1-2 cm derinliğe ekin.</li>
+                    <li>Bitki büyüdükçe destek verin, çünkü patlıcanlar büyük ve ağır olabiliyor.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Toprağın üst kısmı kuruduğunda sulama yapın. Patlıcanlar düzenli sulama ister.</li>
+                    <li>Fazla su birikmesi kök çürümelerine yol açabilir, buna dikkat edilmelidir.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <ul>
+                    <li>Patlıcanlar, rengi parlak mor ve şekli tam olarak oturduğunda hasat edilebilir.</li>
+                    <li>Hasat sırasında dikkatli olun, patlıcanları nazikçe koparın.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Patlıcanlar bazı zararlılar ve hastalıklar nedeniyle zarar görebilir. En yaygın sorunlar şunlardır:</p>
+                <table>
+                    <caption>
+                        <h4>Patlıcan Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Patlıcan Mildiği</th>
+                            <td>Hastalık</td>
+                            <td>Yapraklarda beyaz, tozlu lekeler; bitkinin zayıflaması</td>
+                            <td>Hastalanmış yaprakları kesin ve iyi hava sirkülasyonu sağlamak için alanı düzenli tutun.</td>
+                        </tr>
+                        <tr>
+                            <th>Patlıcan Böceği</th>
+                            <td>Zararlı</td>
+                            <td>Yapraklarda yuvarlak delikler; sararma</td>
+                            <td>Böcek ilaçları kullanın ve organik yöntemler tercih edin.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

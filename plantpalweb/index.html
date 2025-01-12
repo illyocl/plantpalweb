@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantPal</title>
+    <link rel="stylesheet" href="/Content/style.css">
+</head>
+<body>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+
+
+    </script>
+    
+    
+    <main>
+        <div class="quote-section">
+            <img src="İmages/resim1.jpg" alt="Garden Quote Background">
+            <div class="quote-text">
+                <p>"Yeşilin Dokunuşuyla Hayatı Canlandır!"</p>
+            </div>
+        </div>
+        
+        <h2 class="section-title">Popüler Bitkiler</h2>
+        <div class="plant-cards">
+            
+            <a href="aloevera.html" class="plant-card" target="_blank">
+                <h3>Aloe Vera</h3>
+                <img src="İmages/resim2.webp" alt="Aloe Vera">
+                <div class="plant-info">
+                    <p>Işık: <span> &#11044;&#11044;&#11044;&#11044;&#11044; </span></p>
+                    <p>Su: <span>&#11044;&#11044;&#11044;&#11044;&#11044; </span></p>
+                    <p>Sıcaklık: <span>&#11044;&#11044;&#11044;&#11044;&#11044; </span></p>
+                </div>
+            </a>
+           
+            <a href="orkide.html" class="plant-card" target="_blank">
+                <h3>Orkide</h3>
+                <img src="İmages/resim3.jpg" alt="Orkide">
+                <div class="plant-info">
+                    <p>Işık: <span>&#11044;&#11044;&#11044;</span></p>
+                    <p>Su: <span>&#11044;&#11044;&#11044;&#11044;</span></p>
+                    <p>Sıcaklık:<span> &#11044;&#11044;&#11044;&#11044;&#11044;</span></p>
+                </div>
+            </a>
+            
+            <a href="yelken_cicegi.html" class="plant-card" target="_blank">
+                <h3>Yelken Çiçeği</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiGZEAMSvQmMCZg3PIxz9OZkySBgMHetbhYw&s" alt="Yelken Çiçeği">
+                <div class="plant-info">
+                    <p>Işık:<span> &#11044;&#11044;</span></p>
+                    <p>Su: <span>&#11044;&#11044;&#11044;&#11044;</span></p>
+                    <p>Sıcaklık:<span> &#11044;&#11044;&#11044;&#11044;</span></p>
+                </div>
+            </a>
+            <a href="lavanta.html" class="plant-card" target="_blank">
+                <h3>Lavanta</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpr0hJvbhCWf1Dk_PAnDVMVw-ssIuHcQeg0w&sb" alt="Lavanta">
+                <div class="plant-info">
+                    <p>Işık: <span>&#11044;&#11044;&#11044;&#11044;&#11044;</span></p>
+                    <p>Su: <span>&#11044;&#11044;</span></p>
+                    <p>Sıcaklık: <span>&#11044;&#11044;&#11044;</span></p>
+                </div>
+            </a>
+            
+        </div>
+    </main>
+</body>
+</html>
+
+

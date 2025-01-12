@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maydanoz - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Maydanoz</span>
+            </h1>
+            <p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUR8yJhWLUfC0jegoolZxxwQmvQfGjgIIitA&s" alt="Maydanoz">
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Petroselinum crispum</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">Ot</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Dolaylı güneş ışığı</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Toprak hafif nemli olacak şekilde haftada 2-3 kez</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Maydanoz Hakkında</h3>
+                <p>Maydanoz, dünya genelinde yaygın olarak kullanılan ve sağlığa birçok faydası bulunan aromatik bir bitkidir. Vitamin A, C ve K açısından zengindir ve yemeklerde sıkça kullanılır.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Maydanoz, iyi drene edilmiş, humus bakımından zengin topraklarda ve hafif gölgeli alanlarda yetişir.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>İlkbahar ve yaz başlarında ekim yapabilirsiniz.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Tohumları 0.5-1 cm derinliğe ekin ve hafifçe örtün.</li>
+                    <li>Tohumların çimlenmesi 2-4 hafta sürebilir, bu süre zarfında toprağı nemli tutun.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Toprak kurudukça sulayın, ancak aşırı sulamadan kaçının.</li>
+                    <li>Bitkinin sağlıklı kalması için düzenli olarak kontrol edin.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <ul>
+                    <li>Maydanoz yaprakları, bitki 15 cm yüksekliğe ulaştığında toplanmaya başlanabilir.</li>
+                    <li>Taze yaprakları makasla kesin, ancak kök kısmına zarar vermeyin.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Maydanoz, zararlılara ve bazı hastalıklara karşı hassas olabilir. En yaygın sorunlar şunlardır:</p>
+                <table>
+                    <caption>
+                        <h4>Maydanoz Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Yaprak Bitleri</th>
+                            <td>Zararlı</td>
+                            <td>Yapraklarda sararma ve kıvrılma</td>
+                            <td>Organik veya kimyasal böcek ilaçları uygulayın.</td>
+                        </tr>
+                        <tr>
+                            <th>Mantar Hastalıkları</th>
+                            <td>Hastalık</td>
+                            <td>Yapraklarda lekeler</td>
+                            <td>Düzenli havalandırma sağlayın ve nemi kontrol altında tutun.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

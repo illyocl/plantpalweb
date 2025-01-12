@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menekşe - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Menekşe</span>
+            </h1>
+            <p>
+                <img src="https://sabuncakisziverbey.com/image/cache/catalog/URUNLER/sabuncakis-164-550x550.jpg" alt="Menekşe">
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Saintpaulia</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">Çiçekli İç Mekan Bitkisi</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Orta ışık gereksinimi, doğrudan güneş ışığından kaçının.</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Toprağın üst kısmı kurudukça sulayın, aşırı su vermekten kaçının.</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Menekşe Hakkında</h3>
+                <p>Menekşe, güzel ve renkli çiçekleri ile iç mekanlarda popüler olan bir bitkidir. Bakımı oldukça basittir ve evde uzun süre sağlıklı kalabilir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Menekşe, uygun sıcaklık ve ışık koşullarında sağlıklı şekilde yetişir. Çiçekleri, uygun bakıldığında yıllarca açabilir. Genellikle saksı içinde yetiştirilir.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>Menekşe genellikle ilkbahar ve yaz aylarında çiçek açmaya başlar, bu dönemde yeni bitkiler ekilebilir.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Menekşe, yaprak çelikleriyle çoğaltılabilir.</li>
+                    <li>Toprağının iyi drene edilmiş olması gerekir.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Menekşe sulama konusunda hassastır, aşırı su verme köklerinin çürümesine neden olabilir.</li>
+                    <li>Toprağının üst kısmı kurudukça sulayın.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Formlama</div>
+                <p>Menekşe bitkisi budanarak şekil alabilir. Çiçeklerin solduktan sonra bitkiyi budamak, yeni çiçeklerin çıkmasını teşvik eder.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <p>Menekşe genellikle tek bir bitki olarak yetiştirilir, ancak çoğaltılabilir ve yeni bitkiler oluşturulabilir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Menekşe, bazı zararlılara karşı hassas olabilir. Aşağıdaki zararlılarla karşılaşılabilir:</p>
+                <table>
+                    <caption>
+                        <h4>Menekşe Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Yaprak Bitleri</th>
+                            <td>Zararlı</td>
+                            <td>Yapraklarda sararma, küçük lekeler</td>
+                            <td>Doğal zararlı ilaçları kullanın ve bitkiyi düzenli kontrol edin.</td>
+                        </tr>
+                        <tr>
+                            <th>Yaprak Lekeleri</th>
+                            <td>Hastalık</td>
+                            <td>Yapraklarda kahverengi lekeler, kuruma</td>
+                            <td>Hastalıklar için bitkileri izole edin ve tedavi etmek için doğru fungisitleri kullanın.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

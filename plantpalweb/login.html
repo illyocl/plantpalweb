@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Content/style.css">
+    <title>Giriş Yap</title>
+</head>
+<body>
+    <script>
+       
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <main>
+        <div id="loginSection">
+            <h2>Giriş Yap</h2>
+            <form id="loginForm">
+                <input id="email" type="email" placeholder="Email" required>
+                <input id="password" type="password" placeholder="Şifre" required>
+                <button type="submit">Giriş Yap</button>
+            </form>
+            <p>Hesabınız yok mu? <a href="sign_up.html">Kayıt Olun</a></p>
+        </div>
+        <div id="message" style="color: red; display: none;"></div>
+    </main>
+
+    <script src="/Scripts/api.js"></script>
+    <script>
+        // Giriş formunun submit işlemini API üzerinden yönetecek kod
+        document.getElementById("loginForm").addEventListener("submit", async function (e) {
+            e.preventDefault(); 
+
+            
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            // API'ye giriş isteği gönder
+            try {
+                const result = await login(email, password);
+
+                if (result.message === "Giriş başarılı") {
+                    displayMessage("Giriş başarılı! Yönlendiriliyorsunuz...", "green");
+                    setTimeout(() => {
+                        window.location.href = "index.html"; 
+                    }, 2000);
+                } else {
+                    displayMessage(result.message || "Giriş başarısız!", "red");
+                }
+            } catch (error) {
+                displayMessage("Bir hata oluştu: " + error.message, "red");
+            }
+        });
+
+     
+        function displayMessage(message, color) {
+            const messageDiv = document.getElementById("message");
+            messageDiv.style.display = "block";
+            messageDiv.style.color = color;
+            messageDiv.textContent = message;
+        }
+    </script>
+</body>
+</html>
+
+
+

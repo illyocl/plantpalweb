@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-icon.svg" type="image/svg">
+    <link rel="stylesheet" href="../Content/style.css">
+    <link rel="stylesheet" href="../Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitkiler - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+        const script = document.createElement('script');
+        script.src = 'Scripts/search.js';
+        document.body.appendChild(script);
+    </script>
+    
+
+    <div class="main-container">
+        
+       
+        <div class="filter-section">
+            <h2>Filtrele</h2>
+            <form action="#" method="get">
+                
+                <div class="filter-groups">
+                    
+                    <div class="filter-group">
+                        <h3>Mekan Seçimi</h3>
+                        <label>
+                            <input type="checkbox" name="mekan" value="disMekan"> Dış Mekan
+                        </label>
+                        <label>
+                            <input type="checkbox" name="mekan" value="icMekan"> İç Mekan
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Su İhtiyacı</h3>
+                        <label>
+                            <input type="checkbox" name="suIhtiyaci" value="az"> Az
+                        </label>
+                        <label>
+                            <input type="checkbox" name="suIhtiyaci" value="orta"> Orta
+                        </label>
+                        <label>
+                            <input type="checkbox" name="suIhtiyaci" value="cok"> Çok
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Işık İhtiyacı</h3>
+                        <label>
+                            <input type="checkbox" name="isikIhtiyaci" value="az"> Az
+                        </label>
+                        <label>
+                            <input type="checkbox" name="isikIhtiyaci" value="orta"> Orta
+                        </label>
+                        <label>
+                            <input type="checkbox" name="isikIhtiyaci" value="cok"> Çok
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Saksı Boyutu</h3>
+                        <label>
+                            <input type="checkbox" name="saksiBoyutu" value="buyuk"> Büyük
+                        </label>
+                        <label>
+                            <input type="checkbox" name="saksiBoyutu" value="orta"> Orta
+                        </label>
+                        <label>
+                            <input type="checkbox" name="saksiBoyutu" value="kucuk"> Küçük
+                        </label>
+                    </div>
+                </div>
+                <button type="submit">Filtrele</button>
+            </form>
+        </div>
+      
+
+        <div class="plant-cards">
+            <!-- Elma -->
+            <a href="bitkiler/elma.html" class="plant-card" target="_blank" 
+               data-mekan="disMekan" 
+               data-su-ihtiyaci="orta" 
+               data-isik-ihtiyaci="orta" 
+               data-saksi-boyutu="orta">
+                <h3>Elma</h3>
+                <img src="https://cdn.yemek.com/uploads/2015/10/elma-zencefil-suyu-aralik-2020.jpg" alt="Elma">
+            </a>
+            <!-- Pancar -->
+            <a href="bitkiler/pancar.html" class="plant-card" target="_blank"
+                data-mekan="disMekan" data-su-ihtiyaci="az" data-isik-ihtiyaci="orta" data-saksi-boyutu="orta">
+                <h3>Pancar</h3>
+                <img src="https://www.sebzekutusu.com/wp-content/uploads/2020/11/2-min.jpg" alt="Pancar">
+            </a>
+            <!-- Lahana -->
+            <a href="bitkiler/lahana.html" class="plant-card" target="_blank"
+               data-mekan="disMekan" data-su-ihtiyaci="orta" data-isik-ihtiyaci="az" data-saksi-boyutu="buyuk">
+                <h3>Lahana</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWSOTycDgLLmIGYwAqqk6LZv2Tkn7OzWBW4w&s" alt="Lahana">
+            </a>
+            <!-- Kırmızı Biber -->
+            <a href="bitkiler/kirmizibiber.html" class="plant-card" target="_blank"
+               data-mekan="disMekan" data-su-ihtiyaci="cok" data-isik-ihtiyaci="cok" data-saksi-boyutu="orta">
+                <h3>Kırmızı Biber</h3>
+                <img src="https://www.intfarming.com/blog/wp-content/uploads/2020/08/biber-fidesi.jpg" alt="Kırmızı Biber">
+            </a>
+            <!-- Havuç -->
+            <a href="bitkiler/havuc.html" class="plant-card" target="_blank"
+               data-mekan="disMekan" data-su-ihtiyaci="orta" data-isik-ihtiyaci="az" data-saksi-boyutu="buyuk">
+                <h3>Havuç</h3>
+                <img src="https://www.theoccasionalkitchen.com/wp-content/uploads/2023/10/carrots.jpeg" alt="Havuç">
+            </a>
+            <!-- Maydanoz -->
+            <a href="bitkiler/maydanoz.html" class="plant-card" target="_blank"
+               data-mekan="disMekan" data-su-ihtiyaci="az" data-isik-ihtiyaci="orta" data-saksi-boyutu="kucuk">
+                <h3>Maydanoz</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUR8yJhWLUfC0jegoolZxxwQmvQfGjgIIitA&s" alt="Maydanoz">
+            </a>
+            <!-- Salatalık -->
+            <a href="bitkiler/salatalik.html" class="plant-card" target="_blank"
+               data-mekan="disMekan" data-su-ihtiyaci="cok" data-isik-ihtiyaci="cok" data-saksi-boyutu="buyuk">
+                <h3>Salatalık</h3>
+                <img src="https://d2941uvtj8higz.cloudfront.net/uploads/2021/8/y47nk32HqhSpW2nTuklcJyyHDfo4F4i3Eqgcrmg1.jpg" alt="Salatalık">
+            </a>
+            <!-- Patlıcan -->
+            <a href="bitkiler/patlican.html" class="plant-card" target="_blank"
+               data-mekan="disMekan" data-su-ihtiyaci="orta" data-isik-ihtiyaci="cok" data-saksi-boyutu="orta">
+                <h3>Patlıcan</h3>
+                <img src="https://www.agrowy.com/_next/image?url=https%3A%2F%2Fapi.agrowy.com%2Fassets%2F104a4be2-9a71-4d7e-90e0-851601985891&w=3840&q=75" alt="Patlıcan">
+            </a>
+            <!-- Nane -->
+            <a href="bitkiler/nane.html" class="plant-card" target="_blank"
+               data-mekan="disMekan" data-su-ihtiyaci="az" data-isik-ihtiyaci="orta" data-saksi-boyutu="kucuk">
+                <h3>Nane</h3>
+                <img src="https://i.nefisyemektarifleri.com/2023/06/22/nanenin-faydalari-neye-iyi-gelir-az-bilinen-mucizevi-etkileri.jpg" alt="Nane">
+            </a>
+            <!-- Patates -->
+            <a href="bitkiler/patates.html" class="plant-card" target="_blank"
+               data-mekan="disMekan" data-su-ihtiyaci="orta" data-isik-ihtiyaci="orta" data-saksi-boyutu="buyuk">
+                <h3>Patates</h3>
+                <img src="https://i.lezzet.com.tr/images-xxlarge-secondary/patates-yetistiriciligi-evde-patates-ne-zaman-ve-nasil-ekilir-6e0af123-e61a-4e40-980a-e263b79b52d8.jpg" alt="Patates">
+            </a>
+            <!-- Turp -->
+            <a href="bitkiler/turp.html" class="plant-card" target="_blank"
+                data-mekan="disMekan" data-su-ihtiyaci="orta" data-isik-ihtiyaci="orta" data-saksi-boyutu="orta">
+                <h3>Turp</h3>
+                <img src="https://d2941uvtj8higz.cloudfront.net/uploads/2022/11/JLIyI7ICWTTBOQcpdlZg6H9Yw5KeGKY4FCQcSh0Q.jpg" alt="Turp">
+            </a>
+            <!-- Domates -->
+            <a href="bitkiler/domates.html" class="plant-card" target="_blank"
+               data-mekan="disMekan" data-su-ihtiyaci="cok" data-isik-ihtiyaci="cok" data-saksi-boyutu="buyuk">
+                <h3>Domates</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9bMTF2pdzbXPdstNZDcvqfpIE1eEitRLA0A&s" alt="Domates">
+            </a>
+            <!-- Menekşe -->
+            <a href="bitkiler/menekse.html" class="plant-card" target="_blank"
+               data-mekan="icMekan" data-su-ihtiyaci="az" data-isik-ihtiyaci="orta" data-saksi-boyutu="kucuk">
+                <h3>Menekşe</h3>
+                <img src="https://sabuncakisziverbey.com/image/cache/catalog/URUNLER/sabuncakis-164-550x550.jpg" alt="Menekşe">
+            </a>
+            <!-- Kaktüs -->
+            <a href="bitkiler/kaktus.html" class="plant-card" target="_blank" 
+               data-mekan="icMekan" data-su-ihtiyaci="az" data-isik-ihtiyaci="cok" data-saksi-boyutu="orta">
+                <h3>Kaktüs</h3>
+                <img src="https://flowfloral.com/wp-content/uploads/2023/10/IMG_6102-scaled-1.jpg" alt="Kaktüs">
+            </a>
+            <!-- Süsen -->
+            <a href="bitkiler/susen.html" class="plant-card" target="_blank"
+               data-mekan="icMekan" data-su-ihtiyaci="orta" data-isik-ihtiyaci="orta" data-saksi-boyutu="buyuk">
+                <h3>Süsen</h3>
+                <img src="https://ideacdn.net/shop/ir/87/myassets/products/862/iris-fidesi-louisiana-black-gamecock-1.jpg?revision=1697143329" alt="Süsen">
+            </a>
+            <!-- Bonsai -->
+            <a href="bitkiler/bonsai.html" class="plant-card" target="_blank"
+               data-mekan="icMekan" data-su-ihtiyaci="az" data-isik-ihtiyaci="orta" data-saksi-boyutu="kucuk">
+                <h3>Bonsai</h3>
+                <img src="https://www.ascicekevi.com/yuklemeler/cicek/ortakoy-bonsai-1.jpg" alt="Bonsai">
+            </a>
+            <!-- Paşa Kılıcı -->
+            <a href="bitkiler/pasakilici.html" class="plant-card" target="_blank"
+               data-mekan="icMekan" data-su-ihtiyaci="az" data-isik-ihtiyaci="orta" data-saksi-boyutu="orta">
+                <h3>Paşa Kılıcı</h3>
+                <img src="https://sarifrezya.com/cdn/shop/files/IMG_7670-scaled-1-1-scaled-1.jpg?v=1719758699" alt="Paşa Kılıcı">
+            </a>
+            <!-- Kauçuk Bitkisi -->
+            <a href="bitkiler/kaucukbitkisi.html" class="plant-card" target="_blank"
+                data-mekan="icMekan" data-su-ihtiyaci="az" data-isik-ihtiyaci="orta" data-saksi-boyutu="buyuk">
+                <h3>Kauçuk Bitkisi</h3>
+                <img src="https://ideacdn.net/idea/kr/53/myassets/products/279/1-1.jpg?revision=1715892493" alt="Kauçuk Bitkisi">
+            </a>
+            <!-- Deve Tabanı -->
+            <a href="bitkiler/devetabani.html" class="plant-card" target="_blank"
+               data-mekan="icMekan" data-su-ihtiyaci="orta" data-isik-ihtiyaci="orta" data-saksi-boyutu="buyuk">
+                <h3>Deve Tabanı</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmepjhvr1K0G5YVBlafrTmfQ4ZmU5KmboKBw&s" alt="Deve Tabanı">
+            </a>
+            <!-- Yucca -->
+            <a href="bitkiler/yucca.html" class="plant-card" target="_blank"
+                data-mekan="icMekan" data-su-ihtiyaci="az" data-isik-ihtiyaci="cok" data-saksi-boyutu="buyuk">
+                <h3>Yucca</h3>
+                <img src="https://cdn.myikas.com/images/1bd9ce94-24d0-4dd9-a116-9f46a272aad2/6b60bd20-480d-4a0d-86a0-8eb9069ed75d/image_3840.webp" alt="Yucca">
+            </a>
+            <!-- Sukkulent -->
+            <a href="bitkiler/sukkulent.html" class="plant-card" target="_blank"
+               data-mekan="icMekan" data-su-ihtiyaci="az" data-isik-ihtiyaci="cok" data-saksi-boyutu="orta">
+                <h3>Sukkulent</h3>
+                <img src="https://static.ticimax.cloud/36217/uploads/urunresimleri/buyuk/sukulent--49cd-.jpeg" alt="Sukkulent">
+            </a>
+            <!-- Aloe Vera  -->
+            <a href="aloevera.html" class="plant-card" target="_blank"
+               data-mekan="icMekan" data-su-ihtiyaci="orta" data-isik-ihtiyaci="orta" data-saksi-boyutu="orta">
+                <h3>Aloe Vera</h3>
+                <img src="https://cdn.webtekno.com/media/cache/content_detail_v2/article/125081/aloe-vera-bakimi-1655989407.jpg" alt="Aloe Vera">
+            </a>
+            <!-- Orkide -->
+            <a href="orkide.html" class="plant-card" target="_blank"
+               data-mekan="icMekan" data-su-ihtiyaci="orta" data-isik-ihtiyaci="orta" data-saksi-boyutu="kucuk">
+                <h3>Orkide</h3>
+                <img src="https://www.ilpasol.com.tr/wp-content/uploads/2020/04/orkide-3.jpg" alt="Orkide">
+            </a>
+            <!-- Yelkençiçeği -->
+            <a href="yelkencicegi.html" class="plant-card" target="_blank"
+               data-mekan="icMekan" data-su-ihtiyaci="orta" data-isik-ihtiyaci="cok" data-saksi-boyutu="orta">
+                <h3>Yelkençiçeği</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiGZEAMSvQmMCZg3PIxz9OZkySBgMHetbhYw&s" alt="Yelkençiçeği">
+            </a>
+        </div>
+    </div>
+    <script src="Scripts/scripts.js"></script>
+</body>
+</html>

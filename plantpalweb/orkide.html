@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/orchid-icon.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css"> 
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orkide - PlantPal</title>
+    
+</head>
+<body>
+    <script>
+        fetch('header.html') 
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Orkide</span>
+            </h1>
+            <p>
+                <img src="https://www.ilpasol.com.tr/wp-content/uploads/2020/04/orkide-3.jpg" alt="Orkide">
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Orchidaceae</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">Çiçekli bitki</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Dolaylı güneş ışığı</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Her 1-2 haftada bir sulama</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Orkide Hakkında</h3>
+                <p>Orkide, hem iç mekan hem de dış mekan bitkisi olarak popüler olan zarif çiçekler üreten bir bitki familyasıdır. Yaklaşık 25,000 türü ile orkideler, dünyanın en büyük çiçekli bitki ailesidir. Renkleri ve desenleri ile dikkat çekerler.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Bakım İpuçları</div>
+                <ul>
+                    <li>Orkidenizi doğrudan güneş ışığından koruyun; doğrudan ışık, yaprakların yanmasına neden olabilir.</li>
+                    <li>Toprağın kurumasına izin verin; sulama sırasında, saksı toprağının üst kısmı kuruduğunda sulama yapın.</li>
+                    <li>Yüksek nem seviyeleri orkide için faydalıdır; hava nemlendirici veya su dolu bir tabak kullanabilirsiniz.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Çiçeklenme Süreci</div>
+                <p>Orkideler genellikle yılda bir kez çiçek açar. Çiçekler genellikle birkaç hafta sürer. Çiçeklerin solduğunda, sapı kökten kesilmelidir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Orkideler, bitki örtüsü zararlıları ve hastalıklarına karşı hassastır. Dikkat edilmesi gereken yaygın zararlılar:</p>
+                <table>
+                    <caption>
+                    <h4>Orkide Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Örümcek Akarları</th>
+                            <td>İnsansız</td>
+                            <td>Yapraklarda ince ağlar; yaprakların sararması</td>
+                            <td>Yüksek nem ile bitkiyi sulamak ve yaprakları su ile yıkamak.</td>
+                        </tr>
+                        <tr>
+                            <th>Kök Çürüklüğü</th>
+                            <td>Hastalık</td>
+                            <td>Köklerin çürümesi; bitkinin zayıflaması</td>
+                            <td>Toprağın iyi drene olduğundan emin olun.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+

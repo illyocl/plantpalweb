@@ -1,0 +1,292 @@
+
+/* Genel Stil */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f9f4;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #225b38, #8fd0a8);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.search-bar input {
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+    width: 300px;
+}
+
+.login-button {
+    padding: 8px 15px;
+    background-color: #ffffff;
+    color: #225b38;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: linear-gradient(90deg, #225b38, #8fd0a8);
+}
+
+    .navbar a {
+        margin: 0 15px;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+
+.quote-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+}
+
+    .quote-section img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        opacity: 0.8;
+    }
+
+.quote-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Bitki Kartları */
+.section-title {
+    font-size: 28px;
+    margin: 40px 0 20px;
+    color: #5a6a5a;
+    text-align: center;
+}
+
+.plant-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.plant-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s;
+}
+
+    .plant-card:hover {
+        transform: scale(1.05);
+    }
+
+    .plant-card h3 {
+        font-size: 20px;
+        color: #5a6a5a;
+        margin-bottom: 10px;
+    }
+
+    .plant-card img {
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+/* Filtreleme Bölümü */
+.filter-section {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    
+    .filter-section h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+.filter-groups {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px; 
+}
+
+
+.filter-group {
+    flex: 1 1 22%; 
+    min-width: 180px; 
+}
+
+    .filter-group h3 {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    /* Checkbox  */
+    .filter-group label {
+        display: flex; 
+        align-items: center; 
+        font-size: 14px;
+        color: #666;
+        margin-right: 0; 
+        margin-bottom: 5px; 
+        cursor: pointer;
+    }
+
+    .filter-group input[type="checkbox"] {
+        margin-right: 5px; 
+        vertical-align: middle; 
+        width: 16px; 
+        height: 16px; 
+    }
+
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    button[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+
+/* Detay Sayfası */
+main {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.plant-detail-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.plant-detail-info {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f4f9f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+    .plant-detail-info p {
+        font-size: 18px;
+        color: #5a6a5a;
+        margin-bottom: 10px;
+    }
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+    form input {
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 300px;
+    }
+
+    form button {
+        padding: 10px 15px;
+        background-color: #8fd0a8;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        form button:hover {
+            background-color: #6ba47a;
+        }
+
+/* Başlık  */
+h2 {
+    color: #5a6a5a;
+    margin-bottom: 20px;
+}
+
+.suggestion-box {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    z-index: 10;
+}
+
+.suggestion {
+    padding: 8px;
+    cursor: pointer;
+}
+
+    .suggestion:hover {
+        background-color: #f0f0f0;
+    }
+

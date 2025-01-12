@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonsai - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Bonsai</span>
+            </h1>
+            <p>
+                <img src="https://cdn.myikas.com/images/a55fe4a5-f49b-4267-ac17-483dcf5c7d89/68658749-fc53-4841-8949-febda3d48ff7/3840/ficus-bonsai-1.webp" alt="Bonsai">
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Ficus retusa</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">Ağaç (İç Mekan)</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Yüksek ışık, doğrudan güneş ışığından kaçınılmalıdır.</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Toprak kuruduğunda sulayın. Suyu fazla kaçırmamaya dikkat edin.</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Bonsai Hakkında</h3>
+                <p>Bonsai, küçük boyutlu ancak dikkatle şekillendirilen bir ağaçtır. Geleneksel Japon kültürünün bir parçası olan bonsai, estetik ve zarif yapısıyla iç mekanlarda tercih edilen bitkilerden biridir. Doğru bakım ile uzun yıllar sağlıklı bir şekilde büyüyebilir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Bonsai, iç mekanlarda serin ve aydınlık bir ortamda yetiştirilmeyi sever. Güneş ışığından korunmalı, ancak yeterli ışık almalıdır. Bonsai bitkisi, doğru saksı ve toprak seçimi ile sağlıklı büyür.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>Bonsai tohumu veya küçük fidanlar, ilkbaharda ekilebilir.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Tohumları ekmeden önce toprağı iyice hazırlayın ve bonsai için özel toprak karışımı kullanın.</li>
+                    <li>Toprağın nemli kalmasını sağlamak için düzenli olarak sulama yapın, ancak toprağın fazla ıslanmamasına dikkat edin.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Toprak kurudukça sulama yapın, fakat fazla su vermekten kaçının.</li>
+                    <li>Toprağın yüzeyinin kuruması bonsai için iyi bir sulama zamanı olduğunu gösterir.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Formlama</div>
+                <p>Bonsai bitkisi, düzenli olarak budama ve tel takma işlemleriyle şekillendirilir. Bonsai formunu korumak için yılda birkaç kez budama yapılması gerekmektedir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <p>Bonsai bitkisi, belirli bir yaşa ulaştığında biçimsel değişiklikler yapılabilir ve bu, onu daha estetik hale getirebilir. Ancak hasat edilen dallar dikkatlice çıkarılmalı ve bitkinin sağlığına zarar vermemelidir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Bonsai bitkisi de bazı zararlılarla karşılaşabilir. En yaygın zararlılar ve hastalıklar:</p>
+                <table>
+                    <caption>
+                        <h4>Bonsai Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Akarlar</th>
+                            <td>Zararlı</td>
+                            <td>Yapraklarda sararma ve dökülme, ince ağlar</td>
+                            <td>Kimyasal akar ilaçları kullanabilir veya doğal akar kovucu yöntemler tercih edilebilir.</td>
+                        </tr>
+                        <tr>
+                            <th>Yaprak Lekesi</th>
+                            <td>Hastalık</td>
+                            <td>Yapraklarda kahverengi lekeler</td>
+                            <td>Hastalanmış yaprakları temizleyin ve bitkinin nem dengesini kontrol edin.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

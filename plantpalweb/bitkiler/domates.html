@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domates - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+    
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Domates</span>
+            </h1>
+            <p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9bMTF2pdzbXPdstNZDcvqfpIE1eEitRLA0A&s" alt="Domates">
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Solanum lycopersicum</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">Sebze</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Doğrudan güneş ışığı</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Haftada 2-3 kez sulama</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Domates Hakkında</h3>
+                <p>Domates, dünyanın en çok yetiştirilen sebzelerinden biridir ve çok çeşitli yemeklerde kullanılır. Vitamin C açısından zengindir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Domates, sıcak iklimlerde ve güneş ışığının bol olduğu alanlarda en iyi şekilde yetişir. Toprak hafif asidik olmalıdır.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>İlkbahar aylarında tohumları ekmeye başlayın.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Toprağı iyice hazırlayın ve tohumları 1-2 cm derinliğe ekin.</li>
+                    <li>Gerekli nemi sağlamak için düzenli sulama yapın.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Toprağın üst kısmı kuruduğunda sulama yapın. Domates bitkisi fazla suyu sevmez.</li>
+                    <li>Toprağın iyi drene olması, kök çürümelerini engellemek için önemlidir.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <ul>
+                    <li>Domatesler, renkleri kırmızıya döndüğünde hasat edilebilir.</li>
+                    <li>Domatesleri nazikçe kopararak toplayın.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Domates bitkisi, bazı zararlılara karşı hassastır. En yaygın olanları:</p>
+                <table>
+                    <caption>
+                    <h4>Domates Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Domates Mildiği</th>
+                            <td>Hastalık</td>
+                            <td>Yapraklarda kahverengi lekeler; bitkinin zayıflaması</td>
+                            <td>Hastalanmış bitkileri temizleyin ve doğru sulama teknikleri uygulayın.</td>
+                        </tr>
+                        <tr>
+                            <th>Filiz Böceği</th>
+                            <td>Zararlı</td>
+                            <td>Yapraklarda yuvarlak delikler</td>
+                            <td>Kimyasal veya organik böcek ilaçları kullanın.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

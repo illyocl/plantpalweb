@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloe Vera - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+    
+    <div class="main-container">
+        <div class="sub-container">
+            <div id="translate"></div>
+            <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslate"></script>
+            <h1 class="title">
+                <span>Aloe Vera</span>
+            </h1>
+            <p>
+                <img src="https://cdn.webtekno.com/media/cache/content_detail_v2/article/125081/aloe-vera-bakimi-1655989407.jpg" alt="Aloe Vera">
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">
+                        Botanik Adı
+                    </div>
+                    <div class="field-item">Aloe barbadensis miller</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">
+                       Bitki Türü
+                    </div>
+                    <div class="field-item">Şifalı bitki</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">
+                        Işık
+                    </div>
+                    <div class="field-item">Direkt güneş ışığı</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">
+                        Su
+                    </div>
+                    <div class="field-item">2-3 haftada bir sulama</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Aloe Vera Hakkında</h3>
+                <p>Aloe Vera, cilt bakımı ve şifa özellikleri ile bilinen popüler bir bitkidir. Yaprakları, içindeki jelin antiseptik özellikleri ile dikkat çeker.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Aloe Vera, sıcak iklimlerde en iyi şekilde yetişir. Güneş ışığını sevdiğinden, güneşli bir yer seçilmelidir. Toprağın iyi drene olması gerekir; su birikintisi yapmaktan kaçınılmalıdır.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>İlkbahar veya yaz aylarında bitkiyi dışarıya yerleştirin.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Toprağı iyice hazırlayın ve Aloe Vera köklerini 5-10 cm derinliğe yerleştirin.</li>
+                    <li>Bitkiyi dikmeden önce kökleri suyla ıslatın.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Bitkinin sulama gereksinimleri, iklime göre değişir. Toprağın kurumasını bekleyin.</li>
+                    <li>Aloe Vera, fazla suya duyarlıdır, bu nedenle sulama sıklığını dikkatlice ayarlayın.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <ul>
+                    <li>Yapraklar, büyüdüğünde hasat edilebilir. Yaprakları dikkatlice kesin.</li>
+                    <li>Aloe Vera yaprakları, taze kullanılabilir veya depolanabilir.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Aloe Vera bitkisi, birkaç zararlı ile karşılaşabilir. En yaygın olanları:</p>
+                <table>
+                    <caption>
+                    <h4>Aloe Vera Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Örümcek Akarları</th>
+                            <td>İnsansız</td>
+                            <td>Yapraklarda ince ağlar; yaprakların sararması</td>
+                            <td>Yüksek nem ile bitkiyi sulamak ve yaprakları su ile yıkamak.</td>
+                        </tr>
+                        <tr>
+                            <th>Kök Çürüklüğü</th>
+                            <td>Hastalık</td>
+                            <td>Köklerin çürümesi; bitkinin zayıflaması</td>
+                            <td>Toprağın iyi drene olduğundan emin olun.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

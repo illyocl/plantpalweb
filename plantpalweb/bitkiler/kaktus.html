@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaktüs - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Kaktüs</span>
+            </h1>
+            <p>
+                <img src="https://flowfloral.com/wp-content/uploads/2023/10/IMG_6102-scaled-1.jpg" alt="Kaktüs">
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Cactaceae</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">Çalı (İç Mekan)</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Yüksek ışık gereksinimi, doğrudan güneş ışığını sever.</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Kaktüsler az suya ihtiyaç duyar, toprağı tamamen kuruduktan sonra sulayın.</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Kaktüs Hakkında</h3>
+                <p>Kaktüs, suyu depolama yeteneği sayesinde çöl koşullarında hayatta kalabilen bir bitkidir. Az suya ihtiyaç duyan bu bitki, yüksek ışık koşullarını tercih eder ve iç mekanlar için mükemmel bir seçenektir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Kaktüsler, iyi drene edilmiş toprak ve doğrudan güneş ışığına maruz kalmayı tercih eder. Sık sulamaktan kaçının çünkü fazla su kök çürümesine neden olabilir.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>Kaktüsler, ilkbahar veya yaz aylarında ekilebilir. Çelikle çoğaltılabilirler.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Kaktüs, küçük saksılara ekilebilir ve köklerin hava almasına dikkat edilmelidir.</li>
+                    <li>Saksı değişiminde toprak neminin kontrol edilmesi önemlidir.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Kaktüsler, toprağın tamamen kuruduğu zaman sulanmalıdır.</li>
+                    <li>Su birikintisinden kaçının ve saksının iyi bir drenaj sistemine sahip olmasına özen gösterin.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Formlama</div>
+                <p>Kaktüsler doğal olarak şekilsizdir ancak iyi bakım ve doğru ışık koşullarında doğru şekil alabilirler. Çeşitli türlerde farklı boyutlarda kaktüsler bulunur.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <p>Kaktüslerin çiçekleri açtığında, çiçekler genellikle geçicidir. Ancak, yeni kaktüs bitkileri kök çeliklerinden üretilerek çoğaltılabilir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Kaktüsler genellikle zararlılara karşı dayanıklıdır. Ancak, dikkat edilmesi gereken bazı zararlılar ve hastalıklar vardır:</p>
+                <table>
+                    <caption>
+                        <h4>Kaktüs Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Yaprak Bitleri</th>
+                            <td>Zararlı</td>
+                            <td>Yapraklarda sararma ve küçük lekeler</td>
+                            <td>Doğal zararlı ilaçları kullanın ve bitkiyi düzenli kontrol edin.</td>
+                        </tr>
+                        <tr>
+                            <th>Çürümeler</th>
+                            <td>Hastalık</td>
+                            <td>Yapraklarda siyah lekeler, solma</td>
+                            <td>Fazla su verilmemesi ve drenajın iyi olması sağlanmalıdır.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

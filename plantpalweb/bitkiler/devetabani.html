@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deve Tabanı - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Deve Tabanı</span>
+            </h1>
+            <p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmepjhvr1K0G5YVBlafrTmfQ4ZmU5KmboKBw&s" alt="Deve Tabanı">
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Sansevieria trifasciata</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">Çalı (İç Mekan)</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Orta ışık, doğrudan güneş ışığından kaçının.</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Toprak tamamen kuruduğunda sulayın, fazla su verip kök çürümelerini engelleyin.</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Deve Tabanı Hakkında</h3>
+                <p>Deve tabanı, son derece dayanıklı bir iç mekan bitkisi olup, düşük ışıkta ve kurak koşullarda bile yaşayabilir. Ayrıca havayı temizleme özelliğiyle de bilinir. Az bakım gerektiren bu bitki, dekoratif ve sağlıklı bir atmosfer yaratır.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Deve tabanı, iyi drene edilmiş toprak ve düşük nem seviyelerinde rahatça yetişebilir. Fazla sulamaktan kaçının çünkü bu bitki suyun birikmesinden hoşlanmaz. Ayrıca, doğrudan güneş ışığından korunmalıdır.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>Deve tabanı, genellikle ilkbahar veya yaz aylarında ekilebilir. Ancak, kök bölgesinden çelikle de çoğaltılabilir.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Deve tabanı, çoğunlukla küçük saksılara dikilir ve toprağın yüzeyi kuruduğunda sulanır.</li>
+                    <li>Saksı değişiminde, kökleri fazla sıkıştırmamaya özen gösterin.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Toprak tamamen kuruduğunda sulama yapın. Fazla su verilmesi kök çürümelerine neden olabilir.</li>
+                    <li>Su birikintisinden kaçının ve saksı altındaki drenajın açık olduğundan emin olun.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Formlama</div>
+                <p>Deve tabanı, genellikle kendiliğinden güzel bir şekil alır. Ancak, istenilen şekli elde etmek için bitkinin bazı kısımlarını budayabilirsiniz.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <p>Deve tabanı, kesilen köklerden yeni bitkiler elde edilebilecek şekilde çoğaltılabilir. Bunun için köklerden bir parça alınarak yeni saksılarda yetiştirilebilir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Deve tabanı, genellikle zararlılara karşı dayanıklıdır ancak bazı durumlarda şunlar görülebilir:</p>
+                <table>
+                    <caption>
+                        <h4>Deve Tabanı Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Örümcek Akarları</th>
+                            <td>Zararlı</td>
+                            <td>Yapraklarda ince ağlar ve sararma</td>
+                            <td>Bitkilerinizi düzenli olarak kontrol edin ve gerektiğinde doğal akar ilaçları kullanın.</td>
+                        </tr>
+                        <tr>
+                            <th>Yaprak Lekeleri</th>
+                            <td>Hastalık</td>
+                            <td>Yapraklarda kahverengi lekeler</td>
+                            <td>Yaprakları temizleyin ve bitkinin nem dengesini kontrol edin.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

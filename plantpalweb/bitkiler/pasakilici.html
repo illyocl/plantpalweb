@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/fav-icon/plant-svgrepo-com.svg" type="image/svg">
+    <link rel="stylesheet" href="/Content/style.css">
+    <link rel="stylesheet" href="/Content/care.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paşakılıcı - PlantPal</title>
+</head>
+<body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+            const script = document.createElement('script');
+            script.src = 'Scripts/search.js';
+            document.body.appendChild(script);
+    </script>
+
+    <div class="main-container">
+        <div class="sub-container">
+            <h1 class="title">
+                <span>Paşakılıcı</span>
+            </h1>
+            <p>
+                <img src="https://sarifrezya.com/cdn/shop/files/IMG_7670-scaled-1-1-scaled-1.jpg?v=1719758699" alt="Paşakılıcı">
+            </p>
+
+            <div class="field-container">
+                <div class="field">
+                    <div class="field-label">Botanik Adı</div>
+                    <div class="field-item">Soleirolia</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Bitki Türü</div>
+                    <div class="field-item">İç Mekan Bitkisi</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Işık</div>
+                    <div class="field-item">Orta ışık gereksinimi, doğrudan güneş ışığından kaçının.</div>
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Su</div>
+                    <div class="field-item">Toprağı hafif nemli tutun, ancak fazla su vermekten kaçının.</div>
+                </div>
+            </div>
+
+            <div class="text-content">
+                <h3>Paşakılıcı Hakkında</h3>
+                <p>Paşakılıcı, küçük yaprakları ve yoğun yeşil görüntüsüyle iç mekanlarda sıklıkla tercih edilen bir bitkidir. Düşük bakım gereksinimiyle popülerdir.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Yetiştirme</div>
+                <p>Paşakılıcı, nemli ortamları sever ancak doğrudan güneş ışığından kaçınılmalıdır. Yavaş büyüyen bir bitki olduğundan bakımı oldukça basittir.</p>
+                <h4>Ne Zaman Ekin?</h4>
+                <ul>
+                    <li>İlkbahar ve yaz aylarında çoğaltma için idealdir.</li>
+                </ul>
+                <h4>Nasıl Ekin?</h4>
+                <ul>
+                    <li>Paşakılıcı, çeliklerle çoğaltılabilir. Kökleri kolayca çıkar.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Sulama</div>
+                <ul>
+                    <li>Paşakılıcı, toprak kurudukça sulanmalıdır. Aşırı sulama kök çürümesine yol açabilir.</li>
+                </ul>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Formlama</div>
+                <p>Paşakılıcı bitkisi çok kolay şekillendirilebilir. Genellikle saksıda yayılma eğilimindedir, bu nedenle düzenli olarak şekillendirilmeli ve şekli korunmalıdır.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Hasat</div>
+                <p>Paşakılıcı genellikle çeliklerle çoğaltılarak hasat edilebilir. Ancak, bitki genellikle tek bir saksı içinde bakılır.</p>
+            </div>
+
+            <div class="text-content">
+                <div class="name">Zararlılar/Hastalıklar</div>
+                <p>Paşakılıcı, bazı zararlılarla karşılaşabilir. Aşağıda belirtilen zararlılarla dikkat edilmelidir:</p>
+                <table>
+                    <caption>
+                        <h4>Paşakılıcı Zararlıları ve Hastalıkları</h4>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Zararlı/Hastalık</th>
+                            <th>Tip</th>
+                            <th>Belirtiler</th>
+                            <th>Kontrol/Önleme</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Örgülü Yosma</th>
+                            <td>Zararlı</td>
+                            <td>Yapraklarda sararma, yaprak dökülmesi</td>
+                            <td>Bitkiyi izole edin, bitkiyi temizleyin ve doğal böcek ilaçları kullanın.</td>
+                        </tr>
+                        <tr>
+                            <th>Yaprak Lekeleri</th>
+                            <td>Hastalık</td>
+                            <td>Yapraklarda kahverengi lekeler, kısımlarının kuruması</td>
+                            <td>Fungisit kullanarak hastalıkları kontrol altına alabilirsiniz.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

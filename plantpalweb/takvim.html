@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantPal - Bitki Yönetimi</title>
+
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Content/takvim.css">
+    <link rel="stylesheet" href="Content/style.css" />
+</head>
+<body>
+    <script src="Scripts/auth.js"></script>
+    <script src="Scripts/takvim.js"></script>
+    <script src="Scripts/plant.js"></script>
+
+    <script>
+        
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+       
+        const script = document.createElement('script');
+        script.src = 'Scripts/search.js';
+        document.body.appendChild(script);
+    </script>
+
+    <div class="container">
+        
+        <div class="calendar-container">
+            <div id="calendar"></div>
+        </div>
+
+        
+        <div class="plant-card">
+            <h2>Bitki Ekle</h2>
+            <form id="plantForm">
+               
+                <label for="plantName">Bitki Adı:</label>
+                <input type="text" id="plantName" placeholder="Bitki Adını Girin" required>
+
+                
+                <label for="plantType">Bitki Türü:</label>
+                <select id="plantType" required>
+                    <option value="" disabled selected>Tür Seçin</option>
+                    <option value="kaktüs">Kaktüs</option>
+                    <option value="domates">Domates</option>
+                    <option value="aloe-vera">Aloe Vera</option>
+                    <option value="bonsai">Bonsai</option>
+                    <option value="devetabani">Deve Tabanı</option>
+                    <option value="elma">Elma</option>
+                    <option value="havuc">Havuç</option>
+                    <option value="kaucukbitkisi">Kauçuk Bitkisi</option>
+                    <option value="kirmizibiber">Kırmızı Biber</option>
+                    <option value="lahana">Lahana</option>
+                    <option value="maydanoz">Maydanoz</option>
+                    <option value="menekse">Menekşe</option>
+                    <option value="nane">Nane</option>
+                    <option value="pancar">Pancar</option>
+                    <option value="pasakilici">Paşa Kılıcı</option>
+                    <option value="patates">Patates</option>
+                    <option value="patlican">Patlıcan</option>
+                    <option value="salatalik">Salatalık</option>
+                    <option value="sukkulent">Sukkulent</option>
+                    <option value="süsen">Süsen</option>
+                    <option value="turp">Turp</option>
+                    <option value="yucca">Yucca</option>
+                </select>
+
+                
+                <label for="plantSize">Bitki Boyutu:</label>
+                <select id="plantSize" required>
+                    <option value="" disabled selected>Boyut Seçin</option>
+                    <option value="küçük">Küçük</option>
+                    <option value="orta">Orta</option>
+                    <option value="büyük">Büyük</option>
+                </select>
+
+                
+                <button type="submit">Ekle</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+                events: [] 
+            });
+
+            
+            const plantForm = document.getElementById('plantForm');
+            plantForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const plantName = document.getElementById('plantName').value;
+                const plantType = document.getElementById('plantType').value;
+                const plantSize = document.getElementById('plantSize').value;
+
+                
+                const userId = localStorage.getItem('userId');
+
+                
+                const plant = {
+                    name: plantName,
+                    type: plantType,
+                    size: plantSize
+                };
+
+                fetch(`https://localhost:7035/api/Plant?userId=${userId}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(plant) 
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        
+                        loadPlants(); 
+                        alert(`${plantName} başarıyla eklendi!`);
+                        plantForm.reset(); 
+                    })
+                    .catch(error => {
+                        console.error('Hata:', error);
+                        alert('Bitki eklenirken bir hata oluştu.');
+                    });
+            });
+
+            
+            const fetchPlants = async () => {
+                const userId = localStorage.getItem('userId');
+                const response = await fetch(`https://localhost:7035/api/Plant?userId=${userId}`, {
+                    method: 'GET'
+                });
+
+                if (response.ok) {
+                    const plants = await response.json();
+                    return plants;
+                } else {
+                    console.error('Bitkiler alınırken bir hata oluştu.');
+                    return [];
+                }
+            };
+
+            // bitkileri veritabanından alıp takvime ekle
+            const loadPlants = async () => {
+                const plants = await fetchPlants();
+                plants.forEach(plant => {
+                    $('#calendar').fullCalendar('renderEvent', {
+                        title: `${plant.name} (${plant.type}, ${plant.size})`,
+                        start: plant.dateAdded.split('T')[0], 
+                        allDay: true
+                    });
+                });
+            };
+
+          
+            loadPlants();
+        });
+    </script>
+</body>
+</html>

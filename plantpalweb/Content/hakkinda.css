@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+  }
+  :root{
+    --primary-color:#0F580E;
+    --default-color:black;
+    --sub-color:white;
+    --nav-background:#f9fcff;
+    --higlight:#dce1e1;
+    --marker-clr:#6b7280;
+    --font-size:clamp(13px,1.6vw,42px);
+    --sub-font-size:clamp(12px,1.5vw,39px);
+  }
+
+
+  .logo img{
+    width: 11%;
+    vertical-align: middle;
+  }
+
+  .logo span a{
+    font-family: 'Black Ops One', 'cursive';
+    font-size: clamp(25px,3.5vw,90px);
+    color: var(--primary-color);
+    margin-left: 1.5%;
+    vertical-align: middle;
+  }
+  .back-to{
+    text-align: end;
+  }
+  .back-to ul li{
+    list-style: none;
+
+  }
+  .back-to ul li a{
+    font-size: var(--sub-font-size);
+    color: var( --default-color);
+    text-align: end;
+  }
+
+  .content-container{
+    padding: 8% 0% 9%;
+  }
+
+ 
+
+  .intro-image img{
+    width: 100%;
+  }
+
+  /* faq name labeled */
+  
+  .name{
+    text-align: center;
+    margin: 3.5% 0%;
+  }
+
+  .name span{
+    padding: 5px 20px;
+    background-color:var(--default-color  );
+    color: var(--sub-color);
+    border-radius: 20px;
+    font-size: var(--sub-font-size);
+  }
+
+  /* faq-boxes */
+
+  .faq-container{
+    padding: 0% 5%;
+  
+  }
+
+  .faq-box{
+    padding: 2% 3%;
+    margin-top: 3%;
+  border-bottom: 2px solid var(--sect-back);;
+  }
+
+  .qstn{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .qstn h1{
+    font-size: var(--font-size)
+  }
+
+  .bi-caret-down-fill::before {
+
+    font-size: var(--font-size);
+    transition: transform 0.5s ease;
+  }
+
+  .ans{
+    max-height:0;
+    overflow: hidden;
+    transition: max-height .2s ease;
+  }
+
+
+  .ans p{
+    padding-top: 2%;
+    font-size: var(--sub-font-size);
+    text-align: justify;
+  
+  }
+  .ans ul, .ans ol{
+
+    padding: 1.5% 10% 0% 6%;
+    font-size: var(--sub-font-size);
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  li::marker{
+    color: var(--marker-clr);
+  }
+
+  .highlight{
+background-color: var(--higlight);
+  }
+
+.rotate::before{
+  transform: rotate(180deg);
+  
+}
+
+@media screen and (min-width:1500px) {
+  
+.logo img{
+  width: 12%;
+}
+}
+
+@media screen and (max-width:900px) {
+  .logo img{
+    width: 9%;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .logo img {
+    width: 8%;
+}
+}
+
+@media screen and (max-width:580px) {
+  .logo img {
+    width: 12%;
+}
+  .back-to{
+    width: 90%;
+  }
+ 
+}
+
+@media screen and (max-width: 450px){
+.logo img {
+    width: 13%;
+}
+}
+@media screen and (max-width: 400px){
+  .name {
+    margin: 5.5% 0%;
+}
+}
